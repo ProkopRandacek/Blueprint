@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Blueprint
 {
     public enum UndergroundBeltType
@@ -48,8 +50,9 @@ namespace Blueprint
 
         /// <summary>
         /// Item requests by this entity, this is what defines the item-request-proxy when the blueprint is placed, optional.
+        /// 1 or more instances of key/value pairs. Key is the name of the item, string. Value is the amount of items to be requested
         /// </summary>
-        public ItemRequest Items;
+        public Dictionary<string, int> ? Items;
 
         /// <summary>
         /// Name of the recipe prototype this assembling machine is set to, optional, string.
