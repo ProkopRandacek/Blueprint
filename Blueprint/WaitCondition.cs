@@ -24,6 +24,7 @@ namespace Blueprint
         /// </summary>
         public int ? Ticks;
         
-        //TODO condition object
+        // TODO CircuitCondition Object
+        // 
     }
 }
